@@ -35,3 +35,9 @@
   background: linear-gradient(to right, #41295a, #2f0743);
   color: #fff;
 }
+
+.role-label {
+  font-size: 2rem;
+  margin-top: 1.5rem;
+  text-align: center;
+}
