@@ -10,11 +10,18 @@ export default function App() {
 
   return (
     <section className="voice-recorder">
-      <h1 className="title">Voice Recorder</h1>
+      <h1 className="title">Camry Speaking</h1>
       <div className="recorder-container">
-        <RecorderControls recorderState={recorderState} handlers={handlers} />
-        <RecordingsList audio={audio} />
+        <div className="bot-container">
+
+        </div>
+        <div className="huy-container">
+          <RecorderControls recorderState={recorderState} handlers={handlers} />
+          <RecordingsList audio={audio} />
+        </div>
       </div>
+      
+      
     </section>
   );
 }
