@@ -34,12 +34,14 @@ export default function useRecorder() {
               ...prevState,
               recordingSeconds: prevState.recordingSeconds + 1,
             };
+
           else if (prevState.recordingSeconds === 59)
             return {
               ...prevState,
               recordingMinutes: prevState.recordingMinutes + 1,
               recordingSeconds: 0,
             };
+            
           else return prevState;
         });
       }, 1000);

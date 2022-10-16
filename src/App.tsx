@@ -1,13 +1,16 @@
 import RecorderControls from "./components/recorder-controls";
 import RecordingsList from "./components/recordings-list";
+import Logs from './components/logs';
 import Avatar from "./components/avatar";
 import useRecorder from "./hooks/use-recorder";
+import useLogs from './hooks/use-logs';
 import { UseRecorder } from "types/recorder";
 import "app.css";
 
 export default function App() {
   const { recorderState, ...handlers }: UseRecorder = useRecorder();
   const { audio } = recorderState;
+  const { logs } = useLogs("Inital Log");
 
   return (
     <section className="voice-recorder">
@@ -16,6 +19,7 @@ export default function App() {
         <div className="bot-container">
           <h1 className="role-label">Bot Tutor</h1>
           <Avatar image="https://herobot.app/wp-content/uploads/2020/10/AI-bot-1.jpg" /> 
+          <Logs logs={logs} />
         </div>
         <div className="huy-container">
           <h1 className="role-label">User</h1>

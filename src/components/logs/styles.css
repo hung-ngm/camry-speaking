@@ -1,0 +1,14 @@
+.logs-container {
+    height: 85%;
+    padding: 0 2rem;
+}
+
+.logs-label {
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.log {
+    display: flex;
+    padding: 0.5rem;
+}
