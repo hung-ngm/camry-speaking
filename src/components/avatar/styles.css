@@ -1,0 +1,10 @@
+.container {
+    place-content: 'center';
+    margin-left: 6rem;
+    margin-top: 10rem;
+}
+
+.img {
+    width: 20rem;
+    height: 20rem;
+}
